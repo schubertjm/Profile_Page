@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jason Schubert Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="head">
+        <div id="heading" class="container flex_center">
+            <h1 class="white-txt">Profile</h1>
+            <ul class="flex_center">
+                <li><a class="navlink" href="#">Home</a></li>
+                <li><a class="navlink bold-txt" href="#">My Profile</a></li>
+                <li><a class="navlink" href="#">Find Connections</a></li>
+                <li><button id="sign_out_button">Sign Out</button></li>
+            </ul>
+        </div>
+    </div> 
+    <div class="container flex_stretch pad-lg">
+        <div id="main_col_1" class="flex_stretch">
+            <div id="card" class="card border-sm">
+                <div id="card_head">
+                    <img id="jason-s_pic" src="./Images/Jason-S.jpg" alt="Pic of Jason Schubert">
+                </div>
+                <div id="card_main" class="pad-sm">
+                    <br><br><br>
+                    <h1 id="profile_name">Jason Schubert</h1>
+                    <h3>
+                        <img id="map_marker_icon" src="./Images/map-marker.png" alt="Map Marker Icon">
+                        Hamilton, OH
+                    </h3>
+                    <p>Developer | Engineer | Problem Solver<br>
+                    Master of shadows and the Internet!</p>
+                    <p>
+                        <a href="#" onclick="showNameChange()">
+                            <img id="gear_icon" src="./Images/gear.png" alt="Gear Icon">
+                            edit profile
+                        </a>
+                    </p>
+                    <div class="flex_stretch">
+                        <label for="new_name_input" id="new_name_label">Enter New Name</label>
+                        <input type="text" name="new_name_input" id="new_name_input">
+                        <button id="update_name_btn" onclick="newName()">Update Name</button>
+                    </div>
+                </div>
+            </div>
+            <div id="edu" class="border-sm">
+                <div class="section_head pad-sm white-txt"><h3>Education</h3></div>
+                <div id="edu_main" class="pad-sm">
+                    <h4>Coding Dojo - Full Stack Bootcamp</h4>
+                    <h5>Mar 2022 - Jul 2022</h5>
+                    <p>Double black belt in Python and MERN</p>
+                </div>
+            </div>
+        </div>
+        <div id="main_col_2" class="flex_stretch">    
+            <div id="con_req" class="border-sm">
+                <div class="section_head pad-sm white-txt flex_start">
+                    <input type="number" name="numConReq" id="numConReq" value="2">
+                    <h3>Connection Requests</h3>
+                </div>
+                <div id="con_req_main" class="pad-sm">
+                    <div id="conReq1" class="con_req_det flex_start">
+                        <img class="profile_pic" src="./Images/todd-s.jpg" alt="Todd S">
+                        <h4>Todd S</h4>
+                        <img class="small_pic" src="./Images/accept-circle.png" alt="Accept Circle" role="button" onclick="acceptConnectionRequest1()">
+                        <img class="small_pic" src="./Images/close-circle.png" alt="Close Circle" role="button" onclick="rejectConnectionRequest1()">
+                    </div>
+                    <div id="conReq2" class="con_req_det flex_start">
+                        <img class="profile_pic" src="./Images/phil-s.jpg" alt="Phil K">
+                        <h4>Phil K</h4>
+                        <img class="small_pic" src="./Images/accept-circle.png" alt="Accept Circle" role="button" onclick="acceptConnectionRequest2()">
+                        <img class="small_pic" src="./Images/close-circle.png" alt="Close Circle" role="button" onclick="rejectConnectionRequest2()">
+                    </div>
+                </div>
+            </div>
+            <div class="border-sm">
+                <div class="section_head pad-sm white-txt flex_start">
+                    <input type="number" name="numYourCon" id="numYourCon" value="4">
+                    <h3>Your Connections</h3>
+                </div>
+                <div id="your_con_main" class="pad-sm">
+                    <div id="yourCon1" class="your_con_det flex_start">
+                        <img class="profile_pic" src="./Images/adrien-s.jpg" alt="Adrien D">
+                        <h4>Adrien D</h4>
+                    </div>
+                    <div id="yourCon2" class="your_con_det flex_start">
+                        <img class="profile_pic" src="./Images/anne-s.jpg" alt="Annie J">
+                        <h4>Annie J</h4>
+                    </div>
+                    <div id="yourCon3" class="your_con_det flex_start">
+                        <img class="profile_pic" src="./Images/alayne-s.jpg" alt="Alayne T">
+                        <h4>Alayne T</h4>
+                    </div>
+                    <div id="yourCon4" class="your_con_det flex_start">
+                        <img class="profile_pic" src="./Images/arry-s.jpg" alt="Arry Y">
+                        <h4>Arry Y</h4>
+                    </div>
+                    <div id="yourCon5" class="your_con_det flex_start">
+                        <img class="profile_pic" src="./Images/todd-s.jpg" alt="Todd S">
+                        <h4>Todd S</h4>
+                    </div>
+                    <div id="yourCon6" class="your_con_det flex_start">
+                        <img class="profile_pic" src="./Images/phil-s.jpg" alt="Phil K">
+                        <h4>Phil K</h4>
+                    </div>
+                </div>
+                <div class="pad-sm">
+                    <a href="#">View More</a>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <script src="script.js"></script>       
+</body>
+</html>

@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+/*Common Classes*/
+.flex_start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+.flex_center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.flex_stretch {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.white-txt {
+    color: white;
+}
+
+.bold-txt {
+    font-weight: bolder;
+}
+.pad-sm {
+    padding: 15px;
+}
+
+.pad-lg {
+    padding: 50px;
+}
+
+.border-sm {
+    border: 2px solid black;
+}
+
+.section_head {
+    background-color: gray;
+    color: white;
+    min-height: 20px;
+    flex: 1;
+}
+
+/*heading style*/
+#head {
+    background-color: black;
+    height: 50px;
+}
+
+#heading {
+    height: 50px;
+}
+
+.navlink {
+    color: white;
+    text-decoration: none;
+}
+
+#sign_out_button {
+    height: 30px;
+    background-color: blue;
+    color: white;
+    padding: 5px;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/*left column styles*/
+#main_col_1 {
+    flex-direction: column;
+    flex: 2;
+    padding: 0 20px 0 50px;
+}
+
+#card {
+    flex: 2;
+    margin-bottom: 50px;
+}
+
+#card_head {
+    background-color: aqua;
+    min-height: 50px;
+    position: relative;
+}
+
+#card_main>* {
+    margin-bottom: 10px;
+}
+
+#jason-s_pic {
+    width: 75px;
+    height: 100px;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+
+#map_marker_icon {
+    width: 10px;
+    height: 15px;
+}
+
+#gear_icon {
+    width: 15px;
+}
+    
+#edu {
+    flex: 1;
+}
+
+#edu_main {
+    min-height: 50px;
+    flex: 2;
+}
+
+/*right column style*/
+#main_col_2 {
+    flex-direction: column;
+    flex: 1;
+    padding: 0 50px 0 20px;
+}
+
+#numConReq, #numYourCon {
+    width: 30px;
+    border: none;
+    color: white;
+    text-align: center;
+    background-color: gray;
+    font-size: large;
+}
+
+#con_req {
+    margin-bottom: 50px;
+}
+
+#con_req_main {
+    min-height: 50px;
+    flex: 2;
+}
+
+/*Connection Request Details*/
+.con_req_det {
+    flex-direction: row;
+}
+
+.profile_pic {
+    width: 50px;
+    height: 50px;
+}
+
+.small_pic {
+    width: 25px;
+    height: 25px;
+}
+
+#your_con_main {
+    min-height: 50px;
+    flex: 2;
+    border-bottom: 1px solid black;
+}
+
+#yourCon5, #yourCon6, #new_name_input, #update_name_btn, #new_name_label {
+    display: none;
+}
